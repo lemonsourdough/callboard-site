@@ -1,0 +1,87 @@
+/* ═══════════════════════════════════════════════════════════════
+   CALLBOARD — THEME SYSTEM
+   ───────────────────────────────────────────────────────────────
+   3개 시안이 한 파일에 있음. 본인이 보고 선택하면 됨.
+   
+   사용법: <html data-theme="a"> 또는 <body data-theme="b">
+   - Theme A: 강한 노랑 (IR 덱 무드)
+   - Theme B: 옅은 노랑 + 흰 카드 (블룸버그 무드)
+   - Theme C: 거의 흰색 + 노랑 액센트 (B2B 진중)
+═══════════════════════════════════════════════════════════════ */
+
+/* ──────────── THEME A: 강한 노랑 (default) ──────────── */
+:root,
+[data-theme="a"] {
+  --bg-primary: #FFD60A;
+  --bg-secondary: #FFF1A8;
+  --bg-card: #FFFFFF;
+  --bg-card-dark: #0B0B0B;
+  --ink: #0B0B0B;
+  --ink-dim: #5C5C5C;
+  --ink-on-dark: #FFD60A;
+  --ink-on-dark-dim: rgba(255, 214, 10, 0.65);
+  --line: rgba(11, 11, 11, 0.14);
+  --line-strong: rgba(11, 11, 11, 0.85);
+  --red-live: #FF3B30;
+  --green-up: #15B097;
+  --red-down: #E53935;
+  --blue-info: #2E5BFF;
+  --accent-soft: rgba(11, 11, 11, 0.06);
+}
+
+/* ──────────── THEME B: 옅은 노랑 + 흰 카드 ──────────── */
+[data-theme="b"] {
+  --bg-primary: #FFF8DC;
+  --bg-secondary: #FFFCEE;
+  --bg-card: #FFFFFF;
+  --bg-card-dark: #0B0B0B;
+  --ink: #0B0B0B;
+  --ink-dim: #6B6B6B;
+  --ink-on-dark: #FFD60A;
+  --ink-on-dark-dim: rgba(255, 214, 10, 0.65);
+  --line: rgba(11, 11, 11, 0.12);
+  --line-strong: rgba(11, 11, 11, 0.78);
+  --red-live: #FF3B30;
+  --green-up: #15B097;
+  --red-down: #E53935;
+  --blue-info: #2E5BFF;
+  --accent-soft: rgba(255, 214, 10, 0.18);
+}
+
+/* ──────────── THEME C: 거의 흰색 + 노랑 액센트 ──────────── */
+[data-theme="c"] {
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F1F1F1;
+  --bg-card: #FFFFFF;
+  --bg-card-dark: #0B0B0B;
+  --ink: #0B0B0B;
+  --ink-dim: #6B6B6B;
+  --ink-on-dark: #FFD60A;
+  --ink-on-dark-dim: rgba(255, 214, 10, 0.65);
+  --line: rgba(11, 11, 11, 0.10);
+  --line-strong: rgba(11, 11, 11, 0.85);
+  --red-live: #FF3B30;
+  --green-up: #15B097;
+  --red-down: #E53935;
+  --blue-info: #2E5BFF;
+  --accent-soft: rgba(255, 214, 10, 0.16);
+}
+
+/* ──────────── TYPOGRAPHY (공통) ──────────── */
+:root {
+  --font-display: "Inter Tight", "Pretendard", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  --font-body: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  --max-width: 1440px;
+  --content-width: 1180px;
+  --radius: 0px; /* 직각 — 데이터 인프라 무드 */
+}
